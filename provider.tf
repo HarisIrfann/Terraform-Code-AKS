@@ -9,5 +9,5 @@ terraform {
 
 # Define the Azure provider configuration
 provider "azurerm" {
-  features {}
+  skip_provider_registration = true
 }
