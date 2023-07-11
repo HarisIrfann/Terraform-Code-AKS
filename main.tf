@@ -1,10 +1,4 @@
-terraform{
-  backend "azurerm" {
-    resource_group_name = "Terraform-Demo"
-    storage_account_name = "erraformcodeaks"
-    container_name = "tfstatefile"
-    key = "dev.terraform.tfstate"
-  }
+
 # Create the Azure resource group to contain the AKS cluster.
 resource "azurerm_resource_group" "aks_rg" {
   name     = var.resource_group_name
