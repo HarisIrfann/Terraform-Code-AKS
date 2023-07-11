@@ -1,5 +1,5 @@
 
-# Create the Azure resource group to contain the AKS cluster
+# Create the Azure resource group to contain the AKS cluster.
 resource "azurerm_resource_group" "aks_rg" {
   name     = var.resource_group_name
   location = var.location
